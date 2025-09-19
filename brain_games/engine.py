@@ -1,4 +1,6 @@
 from brain_games.cli import welcome_user
+
+
 def run_game(game_module):
     name = welcome_user()
     print(game_module.GAME_RULES)

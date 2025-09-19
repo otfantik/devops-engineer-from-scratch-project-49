@@ -1,5 +1,8 @@
 import random
+
 GAME_RULES = "What is the result of the expression?"
+
+
 def calculate(num1, num2, operation):
     match operation:
         case '+':
@@ -8,6 +11,8 @@ def calculate(num1, num2, operation):
             return str(num1 - num2)
         case _:
             return None
+
+
 def generate_round():
     num1 = random.randint(1, 50)
     num2 = random.randint(1, 50)

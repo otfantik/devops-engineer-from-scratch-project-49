@@ -1,7 +1,12 @@
 import random
+
 GAME_RULES = "What number is missing in the progression?"
+
+
 def generate_progression(start, step, length):
     return [start + i * step for i in range(length)]
+
+
 def generate_round():
     start = random.randint(1, 20)
     step = random.randint(1, 10)
