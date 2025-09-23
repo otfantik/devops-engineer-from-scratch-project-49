@@ -1,6 +1,8 @@
 import random
 
 GAME_RULES = "What is the result of the expression?"
+MIN_NUM = 1
+MAX_NUM = 100
 
 
 def calculate(num1, num2, operation):
@@ -14,8 +16,8 @@ def calculate(num1, num2, operation):
 
 
 def generate_round():
-    num1 = random.randint(1, 50)
-    num2 = random.randint(1, 50)
+    num1 = random.randint(MIN_NUM, MAX_NUM)
+    num2 = random.randint(MIN_NUM, MAX_NUM)
     operation = random.choice(['+', '-'])
     question = f"{num1} {operation} {num2}"
     correct_answer = calculate(num1, num2, operation)
